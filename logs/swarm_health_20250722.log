@@ -1,0 +1,120 @@
+[2025-07-22 01:23:37] Starting Docker Swarm health check
+[2025-07-22 01:23:37] Checking swarm nodes...
+[2025-07-22 01:23:37] Node optiplex7802 (wna3g6c09ywj69qkn1w8rj4bu) is healthy
+[2025-07-22 01:23:37] Node optiplex70101 (qychgzmxf07kd5qfuse886qrh) is healthy
+[2025-07-22 01:23:37] Node optiplex70102 (anz6joq2ercqutiw3t3z8vcl2) is healthy
+[2025-07-22 01:23:37] All 3 nodes are healthy
+[2025-07-22 01:23:37] Checking service health...
+[2025-07-22 01:23:37] Service hello-world has all replicas running (4/4)
+[2025-07-22 01:23:37] ALERT: Service monitoring_alertmanager (k6ujmm4xvpg7) has 0/1 replicas running
+[2025-07-22 01:23:37] Service monitoring_cadvisor has all replicas running (4/4)
+[2025-07-22 01:23:37] Service monitoring_grafana has all replicas running (1/1)
+[2025-07-22 01:23:37] Service monitoring_node-exporter has all replicas running (4/4)
+[2025-07-22 01:23:37] Service monitoring_prometheus has all replicas running (1/1)
+[2025-07-22 01:23:38] Service nginx-cluster has all replicas running (8/8)
+[2025-07-22 01:23:38] Service postgres-db has all replicas running (1/1)
+[2025-07-22 01:23:38] Service swarmpit_agent has all replicas running (4/4)
+[2025-07-22 01:23:38] Service swarmpit_app has all replicas running (1/1)
+[2025-07-22 01:23:38] Service swarmpit_db has all replicas running (1/1)
+[2025-07-22 01:23:38] Service swarmpit_influxdb has all replicas running (1/1)
+[2025-07-22 01:23:38] Service traefik_traefik has all replicas running (1/1)
+[2025-07-22 01:23:38] Service visualizer has all replicas running (1/1)
+[2025-07-22 01:23:38] ALERT: 1 out of 14 services are unhealthy
+[2025-07-22 01:23:38] Checking container health...
+[2025-07-22 01:23:38] ALERT: Container swarmpit_app.1.j5rxshy8sfq3lhjv8tk12flc4 (04e635400be8) is not running: "java
+[2025-07-22 01:23:38] ALERT: Container swarmpit_db.1.u99qwcqav1qotmoo9r2qh4y2n (4c77133c2907) is not running: "tini
+[2025-07-22 01:23:38] ALERT: Container swarmpit_app.1.wgqwr62crlelvm0xqbe4r86ug (5e4b8f7927ac) is not running: "java
+[2025-07-22 01:23:38] ALERT: Container swarmpit_influxdb.1.0nv8uyalbsgn3nz1zeoi4yqxj (7ad281e8777e) is not running: "/entrypoint.sh
+[2025-07-22 01:23:38] ALERT: Container swarmpit_agent.ciei2aiqohh2ylpxu1tpwp60p.m2icsqbq5douuosz0s04p8xsd (5f8bf129c11f) is not running: "./agent"
+[2025-07-22 01:23:38] ALERT: Container monitoring_prometheus.1.nholix11ir5rxlah7ini57dfa (d8faabaeb977) is not running: "/bin/prometheus
+[2025-07-22 01:23:38] ALERT: Container monitoring_cadvisor.ciei2aiqohh2ylpxu1tpwp60p.osjerw3msjw75as3g1sfopa9h (fb951798f0bb) is not running: "/usr/bin/cadvisor
+[2025-07-22 01:23:38] ALERT: Container monitoring_node-exporter.ciei2aiqohh2ylpxu1tpwp60p.l7gfhstwwhfqsw34p350fux3b (3ba8d8a8dd94) is not running: "/bin/node_exporter
+[2025-07-22 01:23:38] ALERT: Container monitoring_grafana.1.qwpl4cuyrcw9i9zpfrtirt7ds (49d1c39ee6f5) is not running: "/run.sh"
+[2025-07-22 01:23:38] ALERT: Container nginx-cluster.4.csgn1ynoiw2r0wbk0xvhx4vae (ec8928404773) is not running: "/docker-entrypoint.…"
+[2025-07-22 01:23:38] ALERT: Container hello-world.2.j6pqpcrr549cnj6n640jw38hq (442c874de39e) is not running: "/docker-entrypoint.…"
+[2025-07-22 01:23:38] ALERT: Container traefik_traefik.1.sakwzdjpjw6zjur1931p8scb0 (d40ff4ac7d4b) is not running: "/entrypoint.sh
+[2025-07-22 01:23:38] ALERT: Container visualizer.1.njbm5nj4amtgmvjhvbazdzito (09dedc8e738e) is not running: "/sbin/tini
+[2025-07-22 01:23:38] ALERT: Container swarmpit_app.1.6dpyt5kepl497wgdx17f24w0a (056a6ce5a7cf) is not running: "java
+[2025-07-22 01:23:38] ALERT: Container swarmpit_db.1.lf2a4e3tqduv7waizq0y69o95 (d36da90e9ae1) is not running: "tini
+[2025-07-22 01:23:38] ALERT: Container visualizer.1.e1pu85ocv7duql445cljoq1xi (447474be534c) is not running: "/sbin/tini
+[2025-07-22 01:23:38] ALERT: Container swarmpit_influxdb.1.zfki76yd4iyg2yi7p089y017f (ed6b5d13efaa) is not running: "/entrypoint.sh
+[2025-07-22 01:23:38] ALERT: Container traefik_traefik.1.oa0mupxcr7afkjzzvfjdbrv8s (fe490114f078) is not running: "/entrypoint.sh
+[2025-07-22 01:23:38] ALERT: Container monitoring_prometheus.1.ck0b89eke7vkewdlcmy5f83zt (b728bf3f7888) is not running: "/bin/prometheus
+[2025-07-22 01:23:38] ALERT: Container monitoring_node-exporter.ciei2aiqohh2ylpxu1tpwp60p.cmv280mlc1ygg2jlz068drts9 (5d833ff6961e) is not running: "/bin/node_exporter
+[2025-07-22 01:23:38] ALERT: Container monitoring_cadvisor.ciei2aiqohh2ylpxu1tpwp60p.ns19dd8wrzy35pcxcjty5kz52 (41579b994ba1) is not running: "/usr/bin/cadvisor
+[2025-07-22 01:23:38] ALERT: Container monitoring_grafana.1.i9u053ionkjafogj9f5f57q7o (3140b2433d1d) is not running: "/run.sh"
+[2025-07-22 01:23:38] ALERT: Container hello-world.2.cebrxqxfp8jmx40ggi7b0sqfj (3a3a8aaf8b29) is not running: "/docker-entrypoint.…"
+[2025-07-22 01:23:38] ALERT: Container hello-world.1.wnd2o7566df7totn5km5bqiyy (5f5cdfea4c3a) is not running: "/docker-entrypoint.…"
+[2025-07-22 01:23:38] ALERT: Container nginx-cluster.1.kwbvbkxpu3fl289s6kpk1a0tw (fd1dd0850177) is not running: "/docker-entrypoint.…"
+[2025-07-22 01:23:38] ALERT: Container nginx-cluster.2.ajwavef9cct363wgtjbgnmmas (5c4f419b5c6c) is not running: "/docker-entrypoint.…"
+[2025-07-22 01:23:39] ALERT: Container nginx-cluster.8.ihbh9z6y3suyzx5g87j36exgo (66d9c8f9807f) is not running: "/docker-entrypoint.…"
+[2025-07-22 01:23:39] ALERT: Container nginx-cluster.4.5hamdlhwajrs1srz182th6qtx (60b04f5d569f) is not running: "/docker-entrypoint.…"
+[2025-07-22 01:23:39] ALERT: Container cluster-visualizer (8cddfe6db20b) is not running: "/sbin/tini
+[2025-07-22 01:23:39] ALERT: 29 out of 29 containers are unhealthy
+[2025-07-22 01:23:39] Checking resource usage on nodes...
+[2025-07-22 01:23:39] Resource usage on master - CPU: 45.3%, Memory: 67.448%, Disk: 63%
+[2025-07-22 01:23:39] Skipping remote resource check for optiplex7802 (to be implemented)
+[2025-07-22 01:23:39] Skipping remote resource check for optiplex70101 (to be implemented)
+[2025-07-22 01:23:39] Skipping remote resource check for optiplex70102 (to be implemented)
+[2025-07-22 01:23:39] Health check completed
+[2025-07-22 01:23:39] ALERT: Issues detected in the swarm cluster! Check logs for details.
+[2025-07-22 02:15:01] Starting Docker Swarm health check
+[2025-07-22 02:15:02] Checking swarm nodes...
+[2025-07-22 02:15:02] Node optiplex7802 (wna3g6c09ywj69qkn1w8rj4bu) is healthy
+[2025-07-22 02:15:02] Node optiplex70101 (qychgzmxf07kd5qfuse886qrh) is healthy
+[2025-07-22 02:15:02] Node optiplex70102 (anz6joq2ercqutiw3t3z8vcl2) is healthy
+[2025-07-22 02:15:02] All 3 nodes are healthy
+[2025-07-22 02:15:02] Checking service health...
+[2025-07-22 02:15:02] Service hello-world has all replicas running (4/4)
+[2025-07-22 02:15:02] Service monitoring_alertmanager has all replicas running (1/1)
+[2025-07-22 02:15:02] Service monitoring_cadvisor has all replicas running (4/4)
+[2025-07-22 02:15:02] Service monitoring_grafana has all replicas running (1/1)
+[2025-07-22 02:15:02] Service monitoring_node-exporter has all replicas running (4/4)
+[2025-07-22 02:15:02] Service monitoring_prometheus has all replicas running (1/1)
+[2025-07-22 02:15:02] Service nginx-cluster has all replicas running (8/8)
+[2025-07-22 02:15:02] Service postgres-db has all replicas running (1/1)
+[2025-07-22 02:15:03] Service swarmpit_agent has all replicas running (4/4)
+[2025-07-22 02:15:03] Service swarmpit_app has all replicas running (1/1)
+[2025-07-22 02:15:03] Service swarmpit_db has all replicas running (1/1)
+[2025-07-22 02:15:03] Service swarmpit_influxdb has all replicas running (1/1)
+[2025-07-22 02:15:03] Service traefik_traefik has all replicas running (1/1)
+[2025-07-22 02:15:03] Service visualizer has all replicas running (1/1)
+[2025-07-22 02:15:03] All 14 services are healthy
+[2025-07-22 02:15:03] Checking container health...
+[2025-07-22 02:15:03] ALERT: Container swarmpit_app.1.j5rxshy8sfq3lhjv8tk12flc4 (04e635400be8) is not running: "java
+[2025-07-22 02:15:03] ALERT: Container swarmpit_db.1.u99qwcqav1qotmoo9r2qh4y2n (4c77133c2907) is not running: "tini
+[2025-07-22 02:15:03] ALERT: Container swarmpit_app.1.wgqwr62crlelvm0xqbe4r86ug (5e4b8f7927ac) is not running: "java
+[2025-07-22 02:15:03] ALERT: Container swarmpit_influxdb.1.0nv8uyalbsgn3nz1zeoi4yqxj (7ad281e8777e) is not running: "/entrypoint.sh
+[2025-07-22 02:15:03] ALERT: Container swarmpit_agent.ciei2aiqohh2ylpxu1tpwp60p.m2icsqbq5douuosz0s04p8xsd (5f8bf129c11f) is not running: "./agent"
+[2025-07-22 02:15:03] ALERT: Container monitoring_prometheus.1.nholix11ir5rxlah7ini57dfa (d8faabaeb977) is not running: "/bin/prometheus
+[2025-07-22 02:15:03] ALERT: Container monitoring_cadvisor.ciei2aiqohh2ylpxu1tpwp60p.osjerw3msjw75as3g1sfopa9h (fb951798f0bb) is not running: "/usr/bin/cadvisor
+[2025-07-22 02:15:03] ALERT: Container monitoring_node-exporter.ciei2aiqohh2ylpxu1tpwp60p.l7gfhstwwhfqsw34p350fux3b (3ba8d8a8dd94) is not running: "/bin/node_exporter
+[2025-07-22 02:15:03] ALERT: Container monitoring_grafana.1.qwpl4cuyrcw9i9zpfrtirt7ds (49d1c39ee6f5) is not running: "/run.sh"
+[2025-07-22 02:15:03] ALERT: Container nginx-cluster.4.csgn1ynoiw2r0wbk0xvhx4vae (ec8928404773) is not running: "/docker-entrypoint.…"
+[2025-07-22 02:15:03] ALERT: Container hello-world.2.j6pqpcrr549cnj6n640jw38hq (442c874de39e) is not running: "/docker-entrypoint.…"
+[2025-07-22 02:15:03] ALERT: Container traefik_traefik.1.sakwzdjpjw6zjur1931p8scb0 (d40ff4ac7d4b) is not running: "/entrypoint.sh
+[2025-07-22 02:15:03] ALERT: Container visualizer.1.njbm5nj4amtgmvjhvbazdzito (09dedc8e738e) is not running: "/sbin/tini
+[2025-07-22 02:15:03] ALERT: Container swarmpit_app.1.6dpyt5kepl497wgdx17f24w0a (056a6ce5a7cf) is not running: "java
+[2025-07-22 02:15:03] ALERT: Container swarmpit_db.1.lf2a4e3tqduv7waizq0y69o95 (d36da90e9ae1) is not running: "tini
+[2025-07-22 02:15:03] ALERT: Container visualizer.1.e1pu85ocv7duql445cljoq1xi (447474be534c) is not running: "/sbin/tini
+[2025-07-22 02:15:03] ALERT: Container swarmpit_influxdb.1.zfki76yd4iyg2yi7p089y017f (ed6b5d13efaa) is not running: "/entrypoint.sh
+[2025-07-22 02:15:03] ALERT: Container traefik_traefik.1.oa0mupxcr7afkjzzvfjdbrv8s (fe490114f078) is not running: "/entrypoint.sh
+[2025-07-22 02:15:03] ALERT: Container monitoring_prometheus.1.ck0b89eke7vkewdlcmy5f83zt (b728bf3f7888) is not running: "/bin/prometheus
+[2025-07-22 02:15:03] ALERT: Container monitoring_node-exporter.ciei2aiqohh2ylpxu1tpwp60p.cmv280mlc1ygg2jlz068drts9 (5d833ff6961e) is not running: "/bin/node_exporter
+[2025-07-22 02:15:03] ALERT: Container monitoring_cadvisor.ciei2aiqohh2ylpxu1tpwp60p.ns19dd8wrzy35pcxcjty5kz52 (41579b994ba1) is not running: "/usr/bin/cadvisor
+[2025-07-22 02:15:03] ALERT: Container monitoring_grafana.1.i9u053ionkjafogj9f5f57q7o (3140b2433d1d) is not running: "/run.sh"
+[2025-07-22 02:15:03] ALERT: Container hello-world.2.cebrxqxfp8jmx40ggi7b0sqfj (3a3a8aaf8b29) is not running: "/docker-entrypoint.…"
+[2025-07-22 02:15:03] ALERT: Container hello-world.1.wnd2o7566df7totn5km5bqiyy (5f5cdfea4c3a) is not running: "/docker-entrypoint.…"
+[2025-07-22 02:15:03] ALERT: Container nginx-cluster.1.kwbvbkxpu3fl289s6kpk1a0tw (fd1dd0850177) is not running: "/docker-entrypoint.…"
+[2025-07-22 02:15:03] ALERT: Container nginx-cluster.2.ajwavef9cct363wgtjbgnmmas (5c4f419b5c6c) is not running: "/docker-entrypoint.…"
+[2025-07-22 02:15:03] ALERT: Container nginx-cluster.8.ihbh9z6y3suyzx5g87j36exgo (66d9c8f9807f) is not running: "/docker-entrypoint.…"
+[2025-07-22 02:15:03] ALERT: Container nginx-cluster.4.5hamdlhwajrs1srz182th6qtx (60b04f5d569f) is not running: "/docker-entrypoint.…"
+[2025-07-22 02:15:03] ALERT: Container cluster-visualizer (8cddfe6db20b) is not running: "/sbin/tini
+[2025-07-22 02:15:03] ALERT: 29 out of 29 containers are unhealthy
+[2025-07-22 02:15:03] Checking resource usage on nodes...
+[2025-07-22 02:15:04] Resource usage on master - CPU: 39.7%, Memory: 69.6188%, Disk: 64%
+[2025-07-22 02:15:04] Skipping remote resource check for optiplex7802 (to be implemented)
+[2025-07-22 02:15:04] Skipping remote resource check for optiplex70101 (to be implemented)
+[2025-07-22 02:15:04] Skipping remote resource check for optiplex70102 (to be implemented)
+[2025-07-22 02:15:04] Health check completed
+[2025-07-22 02:15:04] ALERT: Issues detected in the swarm cluster! Check logs for details.

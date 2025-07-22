@@ -1,0 +1,59 @@
+### 🔄 Docker Swarm Project Context
+- **Always read `PLANNING.md`** at conversation start for architecture understanding
+- **Check `TASK.md`** before starting work; add unlisted tasks before proceeding
+- **Reference existing Docker configurations** in compose files before creating new ones
+
+### 🐳 Docker & Container Best Practices
+- **Use official base images** with specific tags (never `latest` in production)
+- **Multi-stage builds** for smaller images
+- **Health checks required** for all services
+- **Resource limits** must be defined (memory, CPU)
+- **Use Docker secrets** for sensitive data, never hardcode
+
+### 🧱 Code Structure & Modularity
+- **Python files under 500 lines**; split into modules when approaching limit
+- **One service per container** principle
+- **Compose files under 200 lines**; use multiple files with extends
+- **Separate concerns**: app logic, configuration, infrastructure
+
+### 🧪 Testing & Reliability
+- **Container tests required**: Build test, run test, health check test
+- **Integration tests** for multi-service interactions
+- **Use docker-compose.test.yml** for test environments
+- **Mock external services** in tests
+- Test scenarios required:
+  - Service starts successfully
+  - Handles connection failures
+  - Recovers from crashes
+
+### ✅ Task Management
+- **Update TASK.md immediately** after completing work
+- **Add discovered issues** to "Discovered During Work" section
+- **Document configuration changes** in PLANNING.md
+
+### 📎 Docker Swarm Conventions
+- **Service naming**: `<stack>_<service>` format
+- **Networks**: Use overlay networks for Swarm services
+- **Volumes**: Named volumes for persistent data
+- **Labels**: Standard labels for Traefik, monitoring
+- **Placement constraints**: Document in compose files
+
+### 🔒 Security Standards
+- **No root containers** unless absolutely necessary
+- **Read-only root filesystems** where possible
+- **Drop unnecessary capabilities**
+- **Network segmentation** between services
+- **Regular base image updates**
+
+### 📚 Documentation Requirements
+- **README.md updates** for new services or changes
+- **Inline documentation** for complex configurations
+- **Environment variable documentation** with examples
+- **Deployment instructions** for each service
+
+### 🧠 AI Behavior Rules
+- **Verify image availability** before using in configurations
+- **Check port conflicts** before exposing services
+- **Confirm volume paths exist** on target nodes
+- **Never delete production data** without explicit confirmation
+- **Ask before making breaking changes** to running services
