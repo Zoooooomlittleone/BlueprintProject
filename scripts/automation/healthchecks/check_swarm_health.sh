@@ -124,7 +124,7 @@ TOTAL_CONTAINERS=0
 while read -r line; do
   CONTAINER_ID=$(echo "$line" | awk '{print $1}')
   CONTAINER_NAME=$(echo "$line" | awk '{print $NF}')
-  CONTAINER_STATUS=$(echo "$line" | awk '{print $3}')
+  CONTAINER_STATUS=$(echo "$line" | awk '{print $5 " " $6 " " $7}')
   
   if [[ "$CONTAINER_STATUS" == *"(unhealthy)"* ]]; then
     log_alert "Container $CONTAINER_NAME ($CONTAINER_ID) is unhealthy"
@@ -135,7 +135,7 @@ while read -r line; do
   fi
   
   TOTAL_CONTAINERS=$((TOTAL_CONTAINERS + 1))
-done < <(docker ps -a | tail -n +2)
+done < <(docker ps | tail -n +2)
 
 if [ $CONTAINERS_UNHEALTHY -gt 0 ]; then
   log_alert "$CONTAINERS_UNHEALTHY out of $TOTAL_CONTAINERS containers are unhealthy"

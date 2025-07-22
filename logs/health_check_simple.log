@@ -1,0 +1,5 @@
+[2025-07-22 02:45:52] Health Check Starting
+[2025-07-22 02:45:52] Nodes: 4/4 ready
+[2025-07-22 02:45:52] Services: 14/14 healthy
+[2025-07-22 02:45:52] Containers: 13/13 running
+[2025-07-22 02:45:52] ✅ Cluster is HEALTHY
